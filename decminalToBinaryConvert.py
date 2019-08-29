@@ -25,6 +25,10 @@ def main2(decimal):
     n = decimal
     result = ""
     remainder = 0
+    while((8**r) <= n):
+        r = r+ 1
+        #print(r)
+    print("amount of bits is " + str(r))
     while(n != 0):
         remainder = int(n % 8)
         #print(remainder)
