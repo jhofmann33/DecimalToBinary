@@ -16,8 +16,20 @@ def main(decimal):
         #print(remainder)
         n = int(n / 2)
         #print(n)
-        result = str(remainder)+ result 
-        print(result)
+        result = str(remainder)+ result
+    print("Binary:")
+    print(result)
                             
-    
-    
+def main2(decimal):
+    r = 0
+    n = decimal
+    result = ""
+    remainder = 0
+    while(n != 0):
+        remainder = int(n % 8)
+        #print(remainder)
+        n = int(n / 8)
+        #print(n)
+        result = str(remainder)+ result
+    print("Octal:")
+    print(result)
